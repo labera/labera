@@ -17,6 +17,13 @@ dependencies {
     compile("mysql:mysql-connector-java")
 
 }
+bootRun.environment([
+        "WELCOME_MESSAGE": "hello",
+        "spring.datasource.url":"jdbc:mysql://localhost:3306/labera" ,
+        "spring.datasource.username":"root",
+        "spring.datasource.password":"password",
+        "spring.datasource..driver-class-name":"com.mysql.jdbc.Driver"
+])
 flyway {
     url = "jdbc:mysql://localhost:3306/labera?useSSL=false"
     user = "root"

@@ -1,0 +1,7 @@
+---
+applications:
+- name: labera
+  path: build/libs/labera.jar
+  random-route: true
+  env:
+    WELCOME_MESSAGE: Hello from Cloud Foundry
