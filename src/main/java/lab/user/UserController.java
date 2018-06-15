@@ -27,7 +27,7 @@ public class UserController {
         return new ResponseEntity<HashMap>(resp, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/find", method = RequestMethod.POST)
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
     public ResponseEntity<HashMap> find(@RequestBody UserMaster user) {
 
         if (user != null) {
