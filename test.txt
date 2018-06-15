@@ -1,0 +1,3 @@
+curl -X POST -H "Content-Type: application/json" -d '{"user_id":"2","user_name":"Aju","password":"Aju","branch":"B1"}' http://localhost:8080/create
+
+curl -X POST -H "Content-Type: application/json" -d '{"user_name":"Archna","password":"Archna"}' http://localhost:8080/find

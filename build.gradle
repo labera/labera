@@ -1,0 +1,25 @@
+plugins {
+    id "java"
+    id "org.springframework.boot" version "1.5.4.RELEASE"
+    id "org.flywaydb.flyway" version "4.0.3"
+
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-jdbc")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("mysql:mysql-connector-java")
+
+}
+flyway {
+    url = "jdbc:mysql://localhost:3306/labera?useSSL=false"
+    user = "root"
+    password = "password"
+    outOfOrder = false
+}
