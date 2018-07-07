@@ -1,7 +1,7 @@
 curl -X POST -H "Content-Type: application/json" -d '{"user_id":"2","user_name":"Aju","password":"Aju","branch":"B1"}' http://localhost:8080/create
-curl -X POST -H "Content-Type: application/json" -d '{"user_id":"2","user_name":"Aju","password":"Aju","branch":"B1"}' https://labera.cfapps.io/create
+curl -X POST -H "Content-Type: application/json" -d '{"user_id":"1","user_name":"Archna","password":"Archna","branch":"B1"}' https://labera.cfapps.io/create
 
-curl -X POST -H "Content-Type: application/json" -d '{"user_name":"Archna","password":"Archna"}' http://labera.cfapps.io/find
+curl -X POST -H "Content-Type: application/json" -d '{"user_name":"Archna","password":"Archna"}' https://labera.cfapps.io/login
 
 cf set-env labera spring.datasource.url jdbc:mysql://us-cdbr-iron-east-04.cleardb.net/ad_14a3b11fc8c7c31?user=b432ae1f8ab66f\u0026password=14bf21c6
 cf set-env labera spring.datasource.username b432ae1f8ab66f
